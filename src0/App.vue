@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>今天天气真不错</div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
+<script lang="ts">
+// 这里可以写TS代码
+//这里的defineComponent 是一个函数， 目的是定义组件，内部可以传入一个配置对象
+import { defineComponent } from 'vue';
+
+// 暴露出去一个定义好的组件
 export default defineComponent({
+  // 组件名字
   name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    console.log('是的')
   }
 });
 </script>
